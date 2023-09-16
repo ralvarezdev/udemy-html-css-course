@@ -28,6 +28,7 @@ button {
 
   font-size: 16px;
   text-transform: uppercase;
+  font-weight: bold;
   background-color: black;
   border-top: 5px solid black;
   color: white;
@@ -59,6 +60,22 @@ li:last-child {
   width: 825px;
   margin: 50px auto;
   border: 5px solid black;
+  position: relative;
+}
+
+.container::after {
+  content: "sale";
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -45px;
 }
 
 .more-info:link,
@@ -83,4 +100,40 @@ li:last-child {
   font-size: 16px;
   text-transform: uppercase;
   margin: 20px 0;
+}
+
+.container-colors {
+  margin: 20px 0;
+}
+
+.rectangle {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+  display: inline-block;
+}
+
+.color-black {
+  background-color: black;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
 }
