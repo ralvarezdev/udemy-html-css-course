@@ -22,12 +22,15 @@ article {
 
 nav {
   font-size: 18px;
+  float: right;
 }
 
 h1 {
   font-size: 24px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
+
 }
 
 h2 {
@@ -135,21 +138,23 @@ a:active {
 } */
 
 /* Id */
-#author {
-  font-style: italic;
-}
-
 #copyright {
   font-size: 16px;
 }
 
 /* Classes */
+.author {
+  font-style: italic;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 .main-header {
-  background-color: #f7f7f7;
+  background-color: #eee;
   /* Padding top/bottom and left/right */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 .post-header {
@@ -159,6 +164,8 @@ a:active {
 .laura-jones-img {
   width: 50px;
   height: auto;
+  float: left;
+  margin-bottom: 20px;
 }
 
 .post-img {
@@ -210,4 +217,11 @@ h2::after {
   position: absolute;
   top: -5px;
   right: -10px;
+}
+
+/* The Clear Fick Trick for Floats */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
 }
