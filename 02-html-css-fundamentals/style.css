@@ -22,8 +22,6 @@ h1 {
   font-size: 24px;
   text-transform: uppercase;
   font-style: italic;
-
-  float: left;
 }
 
 /* Pseudo-element */
@@ -120,33 +118,38 @@ a:active {
 }
 
 article {
-  margin-bottom: 60px;
   width: 825px;
-  float: left;
+  flex: 1;
 }
 
 nav {
   font-size: 18px;
-  float: right;
 }
 
 nav a:link {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-right: 10px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
-nav a:link:last-child {
+/* nav a:link:last-child {
   margin-right: 0;
-}
+} */
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 40px;
-  width: 300px;
-  float: right;
+
+  /* 
+  DEFAULTS
+  flex-grow: 0;
+  flex-shrink:1
+  flex-basis: auto;
+  */
+
+  flex: 0 0 300px;
 }
 
 footer {
@@ -178,27 +181,26 @@ button {
 
 .main-header {
   background-color: #f7f7f7;
-  /* Padding top/bottom and left/right */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .author {
   font-style: italic;
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .post-header {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .laura-jones-img {
   width: 50px;
-  height: auto;
-  float: left;
-  margin-bottom: 20px;
 }
 
 .post-img {
@@ -207,9 +209,26 @@ button {
   height: auto;
 }
 
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
 .related-author {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 .related {
@@ -217,11 +236,18 @@ button {
   margin-left: 0;
 }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
 /* li:nth-child() */
 
 /* The Clear Fick Trick for Floats */
-.clearfix::after {
+/* .clearfix::after {
   clear: both;
   content: '';
   display: block;
-}
+} */
