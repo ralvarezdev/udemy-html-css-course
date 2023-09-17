@@ -2,7 +2,7 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 h2 {
@@ -15,7 +15,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-  padding-top: 10px;
 }
 
 p {
@@ -35,7 +34,6 @@ button {
 
   width: 100%;
   padding: 20px 0;
-  margin-top: 10px;
 }
 
 button:hover {
@@ -78,6 +76,11 @@ li:last-child {
   left: -45px;
 }
 
+.price {
+  margin: 10px 0;
+  float: left;
+}
+
 .more-info:link,
 .more-info:visited {
   color: black;
@@ -94,12 +97,31 @@ li:last-child {
   font-weight: bold;
   font-size: 14px;
   color: #444;
+  float: right;
+  margin: 14px 0;
 }
 
-.product-details {
+.img-converse {
+  float: left;
+}
+
+.product-main-info-container {
+  width: 250px;
+  margin: 25px;
+  float: left;
+}
+
+.product-details-header {
   font-size: 16px;
   text-transform: uppercase;
   margin: 20px 0;
+}
+
+.product-details-container {
+  width: 250px;
+  margin-top: 25px;
+  margin-right: 10px;
+  float: right;
 }
 
 .container-colors {
@@ -107,8 +129,8 @@ li:last-child {
 }
 
 .rectangle {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 10px;
 
   display: inline-block;
@@ -136,4 +158,10 @@ li:last-child {
 
 .color-brown {
   background-color: brown;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
 }
