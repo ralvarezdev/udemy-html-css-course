@@ -21,6 +21,7 @@ p {
   margin-bottom: 10px;
 }
 
+
 button {
   border-style: none;
   cursor: pointer;
@@ -59,6 +60,8 @@ li:last-child {
   margin: 50px auto;
   border: 5px solid black;
   position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
 }
 
 .container::after {
@@ -74,11 +77,6 @@ li:last-child {
   position: absolute;
   top: -20px;
   left: -45px;
-}
-
-.price {
-  margin: 10px 0;
-  float: left;
 }
 
 .more-info:link,
@@ -97,23 +95,21 @@ li:last-child {
   font-weight: bold;
   font-size: 14px;
   color: #444;
-  float: right;
-  margin: 14px 0;
+  justify-self: end;
+  margin: 0;
 }
 
 .main-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
   align-items: center;
-
-  gap: 25px;
-}
-
-.product-main-info-container {
-  width: 250px;
+  justify-content: space-between;
 }
 
 .price-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -121,26 +117,22 @@ li:last-child {
 .product-details-header {
   font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .product-details-container {
-  width: 250px;
-  margin-right: 10px;
-}
-
-.product-details-header {
-  margin-bottom: 10px;
+  padding-right: 10px;
 }
 
 .container-colors {
   display: flex;
-  gap: 10px;
   margin: 20px 0;
 }
 
 .rectangle {
   width: 25px;
   height: 25px;
+  margin-right: 10px;
 }
 
 .color-black {
