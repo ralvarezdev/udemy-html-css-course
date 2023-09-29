@@ -85,7 +85,7 @@ Starter: $399 per month
 
 Complete: $649 per month
 
-- 2 meal2 per day
+- 2 meals per day
 - Order 24/7
 - Delivery is free
 - Get access to latest recipes
@@ -126,3 +126,18 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+,8
+######
+
+## Sections
+
+- Logo + Navigation
+- Hero
+- Featured in
+- How it works
+- Meals + Diets
+- Testimonials + Gallery
+- Pricing + Features
+- CTA
+- Footer
