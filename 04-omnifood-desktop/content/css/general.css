@@ -1,0 +1,177 @@
+/* 
+--- 01 typography system
+
+- font size system in px
+10 12 14 16 18 20 24 30 36 44 52 62 74 86 96
+
+- line height
+default: 1
+small: 1.05
+medium: 1.2
+paragraph default: 1.6
+
+- font weights
+default: 400
+medium: 500
+semi-bold: 600
+bold: 700
+
+- letter spacing
+-0.5px
+0.75px
+
+--- 02 colors
+
+- primary color
+#e67e22
+
+- tints
+#fdf2e9
+#fae5d3
+
+- shades
+#cf711f
+
+- accents
+
+- greys
+#555
+#333
+#fff
+
+--- 03 shadows
+
+--- 04 border radius
+
+--- 05 whitespace
+2 4 8 12 16 24 32 48 64 80 96 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+}
+
+/* --- general reusable components */
+
+.container {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.max-130rem {
+  max-width: 130rem;
+}
+
+.max-120rem {
+  max-width: 120rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid-vcenter {
+  align-items: center;
+}
+
+.grid-2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+
+  border-radius: 9px;
+
+  transition: all 400ms;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  box-shadow: inset 0 0 0 3px #fff;
+  background: #fdf2e9;
+}
+
+.margin-right-small {
+  margin-right: 1.6rem !important;
+}
