@@ -17,6 +17,7 @@
 }
 
 /* - navigation */
+
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -56,6 +57,7 @@
 }
 
 /* - hero section */
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -113,7 +115,35 @@
   font-weight: 700;
 }
 
+/* - featured in section */
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
 /* - how it works section */
+
 .section-how {
   padding: 9.6rem 0;
 }
