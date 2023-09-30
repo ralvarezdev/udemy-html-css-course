@@ -43,6 +43,8 @@ bold: 700
 --- 03 shadows
 
 --- 04 border radius
+default: 9px
+meals section: 11px
 
 --- 05 whitespace
 2 4 8 12 16 24 32 48 64 80 96 128
@@ -170,9 +172,85 @@ body {
 .btn-outline:hover,
 .btn-outline:active {
   box-shadow: inset 0 0 0 3px #fff;
-  background: #fdf2e9;
+  background-color: #fdf2e9;
 }
+
+.link:link,
+.link:visited {
+  display: inline-block;
+
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+
+  transition: all 400ms;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+}
+
+.tag-vegetarian {
+  background-color: #51cf66;
+}
+
+.tag-vegan {
+  background-color: #82c91e;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* --- helper classes */
 
 .margin-right-small {
   margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4.8rem !important;
 }
