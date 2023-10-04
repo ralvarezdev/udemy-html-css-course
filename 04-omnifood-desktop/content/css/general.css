@@ -41,6 +41,9 @@ bold: 700
 #333
 #fff
 
+- other colors
+#ffd43b
+
 --- 03 shadows
 
 --- 04 border radius
@@ -101,6 +104,14 @@ body {
 
 .grid-3cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid:not(last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .heading-primary,
@@ -216,6 +227,15 @@ body {
   color: #e67e22;
 }
 
+.icon-disabled {
+  color: #555;
+}
+
+.text-disabled {
+  color: #555;
+  text-decoration: line-through;
+}
+
 .tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -238,6 +258,8 @@ body {
   background-color: #ffd43b;
 }
 
+.feature {}
+
 strong {
   font-weight: 500;
 }
@@ -254,4 +276,8 @@ strong {
 
 .margin-bottom-medium {
   margin-bottom: 4.8rem !important;
+}
+
+.grid-cell-justify-end {
+  justify-self: end;
 }
