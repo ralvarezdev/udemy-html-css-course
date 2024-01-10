@@ -83,6 +83,7 @@ html {
   10px / 16px = 0.625
   */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -90,6 +91,7 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* --- general reusable components */
@@ -133,9 +135,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-5cols {
+/* .grid-5cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .grid:not(last-child) {
   margin-bottom: 9.6rem;
