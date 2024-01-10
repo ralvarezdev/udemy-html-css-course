@@ -37,11 +37,13 @@ bold: 700
 - accents
 
 - greys
-#6f6f6f lightest color allowed on the testimonials section
+#6f6f6f lightest color allowed #fdf2e9
 #888
+#767676 lightest color allowed on #fff
 #555
 #333
 #aaa
+#eee
 #fff
 
 - other colors
@@ -111,6 +113,10 @@ body {
   align-items: center;
 }
 
+.grid-footer {
+  grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+}
+
 .grid-2cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -121,6 +127,10 @@ body {
 
 .grid-4cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid:not(last-child) {
@@ -286,8 +296,6 @@ body {
 .tag-paleo {
   background-color: #ffd43b;
 }
-
-.feature {}
 
 strong {
   font-weight: 500;
