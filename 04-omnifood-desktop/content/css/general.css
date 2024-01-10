@@ -9,6 +9,7 @@ default: 1
 small: 1.05
 medium: 1.2
 paragraph default: 1.6
+large: 1.8
 
 - font weights
 default: 400
@@ -77,7 +78,10 @@ meals section: 11px
 }
 
 html {
-  /* percentage of user's browser font-size setting */
+  /* percentage of user's browser font-size setting 
+  
+  10px / 16px = 0.625
+  */
   font-size: 62.5%;
 }
 
@@ -258,6 +262,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {

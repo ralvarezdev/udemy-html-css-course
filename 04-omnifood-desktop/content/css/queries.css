@@ -1,0 +1,143 @@
+/* 
+rem: root font size
+em: current font size
+
+1rem = 1em = 16px
+
+NOTE: rem has some bugs in some browsers when used in media queries
+*/
+
+/* --- small laptops: below 1344px */
+
+@media (max-width:84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    /* one step down */
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- landscape tablets: below 1200px */
+
+@media (max-width:75em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* --- tablets: below 944px */
+
+@media (max-width:59em) {
+  html {
+    /* 8px / 16px = 0.5 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.2rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 50%;
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40%*/
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 2.4rem;
+  }
+}
+
+/*
+--- 01 typography system
+
+- font size system in px
+10 12 14 16 18 20 24 30 36 44 52 62 74 86 96
+
+- line height
+default: 1
+small: 1.05
+medium: 1.2
+paragraph default: 1.6
+large: 1.8
+
+--- 05 whitespace
+2 4 8 12 16 24 32 48 64 80 96 128
+*/
