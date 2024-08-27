@@ -1,25 +1,25 @@
 # HTML and CSS Course
 
-This repository contains the source code of the challenges and projects from the HTML and CSS Course, taught by:
+This repository contains the source code of the challenges and projects from the Build Responsive Real-World Websites with HTML and CSS course.
+
+You can view my certificate [here](https://www.udemy.com/certificate/UC-9bb649ac-eaf4-4e97-b598-ff4619517e7d/).
 
 ## Teachers
 
-Jonas Schmedtmann <a href="https://github.com/jonasschmedtmann">(jonasschmedtmann)</a>.
+- [jonasschmedtmann](https://github.com/jonasschmedtmann) - Jonas Schmedtmann
 
-## Course Info
+## Course Links
 
-<a href="https://github.com/jonasschmedtmann/html-css-course">Course GitHub Repository</a>
+- [Course GitHub repository](https://github.com/jonasschmedtmann/html-css-course)
 
-<a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/">Udemy Course</a>
-
-<a href="https://www.udemy.com/certificate/UC-9bb649ac-eaf4-4e97-b598-ff4619517e7d/">My Course Certification</a>
+- [Udemy course](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/)
 
 ## Project Websites
 
-<a href="https://ralvarezdev-challenge-converse.netlify.app/">Converse Challenge</a>
+- [My Converse Challenge](https://ralvarezdev-challenge-converse.netlify.app/)
 
-<a href="https://ralvarezdev-article.netlify.app/">The Basic Language of the Web: HTML</a>
+- [The Basic Language of the Web: HTML](https://ralvarezdev-article.netlify.app/)
 
-<a href="https://ralvarezdev-web-design.netlify.app/">Lisbon Chair Shop</a>
+- [Lisbon Chair Shop](https://ralvarezdev-web-design.netlify.app/)
 
-<a href="https://ralvarezdev-omnifood.netlify.app/">Omnifood</a>
+- [Omnifood](https://ralvarezdev-omnifood.netlify.app/)
